@@ -8,11 +8,12 @@ namespace Lab1
 {
     class Program
     {
-        static void Prime(int[] a)
+        static void Prime(int[] a) 
         {
             int cnt = 0;
             bool ok;
-            string zhai = "";
+            string zhai = "";    
+            // этот цикл проверяет число на простоту
             for (int i = 0; i < a.Length; i++)
             {
                 ok = true;
@@ -33,6 +34,7 @@ namespace Lab1
                 }
 
             }
+            // если нет простых чисел тогда показываем 0биначе показываем каунтер и строку жай
             if (cnt != 0)
             {
                 Console.WriteLine(cnt);
@@ -45,15 +47,14 @@ namespace Lab1
         }
         static void Main(string[] args)
         {
-            int n = int.Parse(Console.ReadLine()); 
-            int[] array = new int[n];
-            string line = Console.ReadLine();
-            string[] cusoc = line.Split();
+            int n = int.Parse(Console.ReadLine()); // длинна массива
+            int[] array = new int[n]; // сам массив 
+            string[] cusoc = Console.ReadLine( ).Split(); // массив  разделенный по кусочкам с помощью метода сплит
             for(int i = 0; i < n; i++)
             {
-                array[i] = int.Parse(cusoc[i]);
+                array[i] = int.Parse(cusoc[i]); // перевожу из массива кусок в массив эрей
             }
-            Prime(array);
+            Prime(array); // метод прайм
         }
 
     }
