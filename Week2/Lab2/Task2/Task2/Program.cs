@@ -11,7 +11,7 @@ namespace Task2
     {
         static void Main(string[] args)
         {
-            StreamReader sr = new StreamReader("input.txt");
+            StreamReader sr = new StreamReader(@"C:\Users\80443\PP2\Week2\Lab2\Task2\Task2\bin\Debug\input.txt");
             string[] s = sr.ReadToEnd().Split();
             sr.Close();
             List<int> ans = new List<int>();
@@ -25,7 +25,7 @@ namespace Task2
                 if (a != 1 && prime == 1)
                     ans.Add(a);
             }
-            StreamWriter sw = new StreamWriter("output.txt");
+            StreamWriter sw = new StreamWriter(@"C:\Users\80443\PP2\Week2\Lab2\Task2\Task2\bin\Debug\output.txt");
             for (int i = 0; i < ans.Count(); i++)
                 sw.Write(ans[i] + " ");
             sw.Close();
@@ -33,5 +33,5 @@ namespace Task2
         }
     }
 }
-    }
-}
+    
+

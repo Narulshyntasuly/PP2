@@ -14,7 +14,7 @@ namespace Task2
             string name = Console.ReadLine(); //создал переменную 
             Console.WriteLine("ID: ");
             string ID = Console.ReadLine();
-            Student s = new Student(ID, name);
+            Student s = new Student("string _ID, string _name")
             s.infostudent(); // метод 
 
             string a = Console.ReadLine();
